@@ -8,4 +8,12 @@ class SomeGeneric<L extends Number & Comparable> {
     private LinkedList<L> lList;
     private L initVal;
 
+    //constructor...
+
+    SomeGeneric(L val) {
+        initVal = val;
+        lList = new LinkedList<>();
+        lList.add(val);
+    }
+
 }
